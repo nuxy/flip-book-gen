@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preload" href="https://buttons.github.io/buttons.js" as="script" />
+    <link rel="stylesheet" type="text/css" href="../dist/flip-book.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+
+    <script type="text/javascript" src="../dist/flip-book.min.js"></script>
+    <script>
+      var output;
+
+      window.onload = function() {
+        var options = {};
+        var images  = [];
+
+        var container = document.getElementById('flip-book');
+
+        flipBookGen(container, images, options);
+      };
+    </script>
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <style type="text/css">
+      #github-buttons {
+        margin: 15px 10px;
+      }
+    </style>
+
+    <title>Create an interactive flip book from a group of images | Flip Book Generator</title>
+  </head>
+  <body>
+
+    <!-- Github buttons start -->
+    <nav id="github-buttons">
+      <a class="github-button" href="https://github.com/nuxy/flip-book-gen" data-color-scheme="no-preference:light;light:light;dark:dark;" data-size="large" aria-label="View project on GitHub">FlipBook-Gen</a>
+      <a class="github-button" href="https://github.com/nuxy/flip-book-gen" data-color-scheme="no-preference:light;light:light;dark:dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star nuxy/flip-book-gen on GitHub">Star</a>
+      <a class="github-button" href="https://github.com/nuxy/flip-book-gen/fork" data-color-scheme="no-preference:light;light:light;dark:dark;" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork nuxy/flip-book-gen on GitHub">Fork</a>
+    </nav>
+    <!-- Github buttons end -->
+
+    <div id="flip-book" class="flip-book"></div>
+  </body>
+</html>
