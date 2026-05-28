@@ -22,12 +22,15 @@
 function FlipBookGen(container, images = [], options = {}) {
   const self = this;
 
-  const defaults = {};
+  const defaults = {
+    pageHeight: 175,
+    pageWidth:  300,
+  };
 
   (function() {
     self.options = Object.assign(defaults, options);
 
-    if (images) {
+    if (images.length > 3) {
       renderFlipBook(images);
     } else {
       throw new Error('Failed to initialize (missing settings)');
@@ -38,7 +41,28 @@ function FlipBookGen(container, images = [], options = {}) {
    * Render a new flip book instance.
    */
   function renderFlipBook(images) {
-  
+    container.classList.add('flip-book');
+    container.style.height = `${self.options.pageHeight}px`;
+    container.style.width  = `${self.options.pageWidth}px`;
+
+    const spline = document.createElement('div');
+    spline.classList.add('spline');
+    spline.style.backgroundImage = `url(${images[0]})`;
+    spline.style.zIndex = images.length + 1;
+
+    container.appendChild(spline);
+
+    for (let i = 0; i < images.length; i++) {
+      const page = document.createElement('div');
+      page.classList.add('page');
+      page.style.backgroundImage = `url(${images[i]})`;
+      page.style.zIndex = images.length - i;
+
+      // Delay per-page animation.
+      page.style.transitionDelay = `${200 * i}ms`;
+
+      container.appendChild(page);
+    }
   }
 
   return self;

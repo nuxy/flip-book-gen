@@ -8,5 +8,40 @@
  */
 
 .flip-book {
+  border-radius: 5px;
+  cursor: pointer;
+  perspective: 1000px;
+  position: relative;
 
+  .page {
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    display: block;
+    height: inherit;
+    position: absolute;
+    transform-origin: 90px;
+    width: inherit;
+  }
+
+  .spline {
+    background-repeat: no-repeat;
+    height: inherit;
+    position: absolute;
+    width: 90px;
+  }
+
+  &:hover {
+    .page {
+      transition: transform 100ms ease-in;
+      transform: rotateY(-90deg);
+    }
+  }
+
+  &:not(:hover) {
+    .page {
+      transition: transform 0s ease-in;
+      transform: rotateY(0deg);
+      transition-delay: 0s !important;
+    }
+  }
 }
