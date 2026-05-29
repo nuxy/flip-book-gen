@@ -37,7 +37,7 @@
 
       &.back {
         transition: unset;
-        transform: unset;
+        transform: unset
       }
     }
   }
@@ -47,6 +47,17 @@
       transition: transform 0s ease-in;
       transform: rotateY(0deg);
       transition-delay: 0s !important;
+    }
+
+    &:after {
+      background-image: url(../images/corner.png);
+      bottom: 0;
+      content: '';
+      height: 42px;
+      position: absolute;
+      right: 0;
+      width: 42px;
+      z-index: 1000;
     }
   }
 }
