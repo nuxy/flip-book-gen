@@ -9,3 +9,7 @@ body {
   box-shadow: 2px 4px 4px #666;
   margin: 10% auto 0 auto;
 }
+
+#flip-book:hover .page {
+  transition: transform 100ms ease-in;
+}
