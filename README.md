@@ -1,5 +1,7 @@
 # Flip Book Generator
 
+[![npm version](https://badge.fury.io/js/flip-book-gen.svg)](https://badge.fury.io/js/flip-book-gen) [![](https://img.shields.io/npm/dm/flip-book-gen)](https://www.npmjs.com/package/flip-book-gen) [![Install size](https://packagephobia.com/badge?p=flip-book-gen)](https://packagephobia.com/result?p=flip-book-gen) [![](https://img.shields.io/github/v/release/nuxy/flip-book-gen)](https://github.com/nuxy/flip-book-gen/releases) [![NO AI](https://raw.githubusercontent.com/nuxy/no-ai-badge/master/badge.svg)](https://github.com/nuxy/no-ai-badge)
+
 Create an interactive flip-book from a group of images.
 
 ![Preview](https://raw.githubusercontent.com/nuxy/flip-book-gen/master/package.gif)
