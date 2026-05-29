@@ -13,3 +13,7 @@ body {
 #flip-book:hover .page {
   transition: transform 100ms ease-in;
 }
+
+#flip-book .page.inner {
+  cursor: none;
+}
