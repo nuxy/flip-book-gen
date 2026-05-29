@@ -53,11 +53,25 @@ function FlipBookGen(container, images = [], options = {}) {
 
     container.appendChild(spline);
 
-    for (let i = 0; i < images.length; i++) {
+    const imageCount = images.length;
+
+    for (let i = 0; i < imageCount; i++) {
+      let part = 'inner';
+
+      switch (i) {
+        case 0:
+          part = 'front';
+        break;
+
+        case imageCount - 1:
+          part = 'back';
+        break;
+      }
+
       const page = document.createElement('div');
-      page.classList.add('page');
+      page.classList.add('page', part);
       page.style.backgroundImage = `url(${images[i]})`;
-      page.style.zIndex = images.length - i;
+      page.style.zIndex = imageCount - i;
 
       // Delay per-page animation.
       page.style.transitionDelay = `${self.options.transDelay * i}ms`;
