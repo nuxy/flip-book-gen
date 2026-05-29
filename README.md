@@ -6,6 +6,7 @@ Create an interactive flip-book from a group of images.
 
 ## Features
 
+- Configurable transitions/transforms for flip animations.
 - Easy to set-up and customize. **No dependencies**.
 
 Checkout the [demo](https://nuxy.github.io/flip-book-gen) for examples of use.
@@ -108,6 +109,8 @@ This package is maintained under the [Semantic Versioning](https://semver.org) g
 This package is distributed in the hope that it will be useful, but without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose.
 
 _flip-book-gen_ is provided under the terms of the [MIT license](http://www.opensource.org/licenses/mit-license.php)
+
+Steamboat Willie is a creative work by [Walt Disney](https://thewaltdisneycompany.com/news/mickey-mouse-95-anniversary-steamboat-willie-script) now in the public domain.
 
 ## Author
 
