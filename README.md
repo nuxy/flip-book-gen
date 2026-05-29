@@ -54,6 +54,35 @@ const flipBook = new FlipBook(container, images, options);
 <div id="flip-book" class="flip-book"></div>
 ```
 
+## Images configuration
+
+Standard array.  The more images provided greatly improves the animation experience.
+
+### Example
+
+```javascript
+const images = [
+  'path/to/image1.png',
+  'path/to/image2.png',
+  'path/to/image3.png',
+  'path/to/image4.png',
+  'path/to/image5.png',
+  'path/to/image6.png',
+
+  // add more images ...
+];
+```
+
+## Flip Book options
+
+Customization and overriding defaults can be done using the following options:
+
+| Option      | Description                     | Type   | Default |
+|-------------|---------------------------------|--------|---------|
+| pageHeight  | Image source height (in pixels) | Number | 175     |
+| pageWidth   | Image source width (in pixels)  | Number | 300     |
+| transDelay  | Transition delay (milliseconds) | Number | 200     |
+
 ## Developers
 
 ### CLI options
