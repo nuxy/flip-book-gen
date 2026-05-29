@@ -25,6 +25,7 @@ function FlipBookGen(container, images = [], options = {}) {
   const defaults = {
     pageHeight: 175,
     pageWidth:  300,
+    transDelay: 200
   };
 
   (function() {
@@ -59,7 +60,7 @@ function FlipBookGen(container, images = [], options = {}) {
       page.style.zIndex = images.length - i;
 
       // Delay per-page animation.
-      page.style.transitionDelay = `${200 * i}ms`;
+      page.style.transitionDelay = `${self.options.transDelay * i}ms`;
 
       container.appendChild(page);
     }
