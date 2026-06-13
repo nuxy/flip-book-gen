@@ -8,10 +8,17 @@
  */
 
 .flip-book {
-  border-radius: 5px;
   cursor: pointer;
+  border-radius: 5px;
   perspective: 1000px;
   position: relative;
+
+  .front,
+  .spline,
+  .page {
+    border-radius: 5px;
+    overflow: hidden;
+  }
 
   .page {
     backface-visibility: hidden;
@@ -28,10 +35,15 @@
     height: inherit;
     position: absolute;
     width: 90px;
+
+    &:hover {
+      border-radius: 5px 0 0;
+    }
   }
 
   &:hover {
     .page {
+      overflow: revert;
       transition: transform 100ms ease-in;
       transform: rotateY(-90deg);
 
