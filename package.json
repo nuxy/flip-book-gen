@@ -1,6 +1,6 @@
 {
   "name": "flip-book-gen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create an interactive flip book from a group of images.",
   "main": "src/flip-book.js",
   "scripts": {

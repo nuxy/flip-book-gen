@@ -7,3 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0) a
 ## [0.1.0] - 2026-06-09
 
 - Removed images from NPM package RSV
+
+## [0.1.1] - 2026-06-13
+
+- Fixed `border-radius` image overflow
+- Added corner image Photoshop layers
+- Include cover.png with release
