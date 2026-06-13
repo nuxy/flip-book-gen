@@ -2,6 +2,7 @@
 babel.config.json
 demo
 eslint.config.js
-images
+images/*
+!images/corner.png
 ISSUE_TEMPLATE.md
 package.*
