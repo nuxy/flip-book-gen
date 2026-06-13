@@ -17,3 +17,8 @@ body {
 #flip-book .page.inner {
   cursor: none;
 }
+
+#flip-book.flip-book:hover .spline {
+  border-radius: 5px 0 0 5px;
+  box-shadow: 3px 0 5px -2px #016db8;
+}
